@@ -5,6 +5,11 @@
         height: 100%;
         margin: 0;
       }
+
+      .bgdark1 {
+        background-color: #0a0d0d !important;
+      }
+      
       section {
         position: relative;
         min-height: 100vh;
