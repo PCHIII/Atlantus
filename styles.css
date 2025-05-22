@@ -9,6 +9,8 @@
       .bgdark1 {
         background-color: #0a0d0d !important;
       }
+
+     
       
       section {
         position: relative;
@@ -27,7 +29,7 @@
         position: absolute;
         width: 400px;
         height: 400px;
-        background: rgba(4, 148, 244, 0.1);
+        background: #041a22;
         z-index: 0;
         pointer-events: none;
         filter: blur(20px);
