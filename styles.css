@@ -7,7 +7,7 @@
       }
 
       .bgdark1 {
-        background-color: #0a0d0d !important;
+        background-color:black!important;
       }
 
      .textg {
@@ -21,6 +21,11 @@
     .image-fade {
   mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1) 20%, rgba(0,0,0,1) 80%, rgba(0,0,0,0));
+}
+
+img {
+  mix-blend-mode: multiply;
+
 }
 
 h1,h2,h3 {
