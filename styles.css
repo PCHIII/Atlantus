@@ -31,10 +31,10 @@
   filter: drop-shadow(0 0 2px rgba(252, 251, 251, 0.8));
 }
 
-img {
+/* img {
   mix-blend-mode: multiply;
 
-}
+} */
 
 h1,h2,h3 {
   font-family: "Orbitron", sans-serif !important;
