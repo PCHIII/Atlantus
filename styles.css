@@ -15,7 +15,7 @@
      }
 
      .bgdark2 {
-        background-color: #55727f !important;
+        background-color: #041a22!important;
      }
       
      .nav-link {
@@ -140,10 +140,10 @@ h1,h2,h3 {
         width: 100%;
       }
       .team-member {
-        border: 1px solid #e0e0e0;
+        /* border-color: 5px solid #e0e0e0; */
         border-radius: 10px;
-        padding: 20px;
-        background-color: #ffffff;
+        /* padding: 20px; */
+        /* background-color: #ffffff; */
         transition: transform 0.3s ease, box-shadow 0.3s ease;
       }
       .team-member:hover {
