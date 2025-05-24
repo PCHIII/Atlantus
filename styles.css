@@ -13,6 +13,10 @@
      .textg {
         color: #55727f !important;
      }
+
+     .bgdark2 {
+        background-color: #55727f !important;
+     }
       
      .nav-link {
       font-family: "Orbitron", sans-serif !important;
@@ -36,6 +40,9 @@ h1,h2,h3 {
   font-family: "Orbitron", sans-serif !important;
 }
 
+.orb {
+  font-family: "Orbitron", sans-serif !important;
+}
 
       section {
         position: relative;
