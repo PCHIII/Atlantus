@@ -74,7 +74,7 @@ section::after {
   position: absolute;
   width: 400px;
   height: 400px;
-  background: #041a22;
+  background: #05212b;
   z-index: 0;
   pointer-events: none;
   filter: blur(20px);
@@ -85,7 +85,7 @@ section::before {
   left: -150px;
   top: -100px;
   --initial-rotation: 15deg;
-  animation-delay: -7s;
+  animation-delay: -5s;
 }
 section::after {
   right: -150px;
