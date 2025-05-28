@@ -38,9 +38,9 @@ body {
   );
 }
 
-.glow-image {
-  filter: drop-shadow(0 0 2px rgba(252, 251, 251, 0.8));
-}
+/* .glow-image {
+  filter: drop-shadow(0 0 1.9px rgba(252, 251, 251, 0.8));
+} */
 
 /* img {
   mix-blend-mode: multiply;
