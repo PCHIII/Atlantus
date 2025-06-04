@@ -191,3 +191,12 @@ section {
   animation: spinInFromLeft 1.5s ease-out forwards;
   opacity: 0; /* Ensures fade-in is part of the effect */
 }
+
+.flag-muted {
+  filter: grayscale(100%) brightness(80%) contrast(90%);
+  transition: filter 0.3s ease;
+}
+
+.flag-muted:hover {
+  filter: none; 
+}
