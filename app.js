@@ -22,3 +22,16 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// email hide
+
+document.addEventListener("DOMContentLoaded", function () {
+  const user = "thelmer";
+  const domain = "atlantuspartners.com";
+  const email = `${user}@${domain}`;
+
+  const emailButton = document.getElementById("email-button");
+  if (emailButton) {
+    emailButton.href = `mailto:${email}`;
+  }
+});
