@@ -202,5 +202,9 @@ section {
 }
 
 .flag{
-  font-family: "Segoe UI Emoji", "Noto Color Emoji", "Twemoji", sans-serif;
+ font-family: "Segoe UI Emoji", "Noto Color Emoji", "Apple Color Emoji", sans-serif;
+    cursor: pointer;
 }
+
+
+
