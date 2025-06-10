@@ -26,6 +26,12 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body
     data-bs-spy="scroll"
@@ -394,7 +400,9 @@
               <span class="fs-2 flag-muted flag" title="Germany">🇩🇪</span>
               <span class="fs-2 flag-muted flag" title="Italy">🇮🇹</span>
               <span class="fs-2 flag-muted flag" title="Japan">🇯🇵</span>
-              <span class="fs-2 flag-muted flag" title="United Kingdom">🇬🇧</span>
+              <span class="fs-2 flag-muted flag" title="United Kingdom"
+                >🇬🇧</span
+              >
               <span class="fs-2 flag-muted flag" title="United States">🇺🇸</span>
               <span class="fs-2 flag-muted flag" title="China">🇨🇳</span>
               <span class="fs-2 flag-muted flag" title="Mexico">🇲🇽</span>
@@ -406,8 +414,7 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" 
-    class="bgdark1 py-5 py-sm-4 py-3">
+    <section id="contact" class="bgdark1 py-5 py-sm-4 py-3">
       <div class="container pt-3">
         <!-- <h1 class="fw-bold mb-4 text-light d-block d-md-none">Contact &mdash;</h1> -->
         <div class="row justify-content-center">
@@ -550,7 +557,7 @@
             </div>
           </div>
         </div>
-         <footer class="text-center mt-5">
+        <footer class="text-center mt-5">
           <hr class="mx-auto my-1" style="width: 50px; border-color: #e5f6ff" />
           <p class="textg m-0" style="font-size: 0.8rem; color: #55727f">
             © 2025 Atlantus Partners LLC. All rights reserved. Registered in
@@ -563,5 +570,11 @@
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="app.js"></script>
+    <!-- Twemoji script after -->
+    <script src="https://unpkg.com/twemoji@latest/dist/twemoji.min.js"></script>
+    <script>
+      // Parse after DOM and your app are ready
+      twemoji.parse(document.body);
+    </script>
   </body>
 </html>
