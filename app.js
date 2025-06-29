@@ -35,3 +35,8 @@ document.addEventListener("DOMContentLoaded", function () {
     emailButton.href = `mailto:${email}`;
   }
 });
+
+const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});
