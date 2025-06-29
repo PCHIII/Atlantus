@@ -36,7 +36,14 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
-const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl);
-});
+// const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+// const tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+//   return new bootstrap.Tooltip(tooltipTriggerEl);
+// });
+
+  function showTooltip(el) {
+    el.querySelector(".custom-tooltip").style.display = "block";
+  }
+  function hideTooltip(el) {
+    el.querySelector(".custom-tooltip").style.display = "none";
+  }
