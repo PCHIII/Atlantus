@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
 // email hide
 
 document.addEventListener("DOMContentLoaded", function () {
-  const user = "thelmer";
+  const user = "info";
   const domain = "atlantuspartners.com";
   const email = `${user}@${domain}`;
 
