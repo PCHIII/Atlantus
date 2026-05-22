@@ -1,0 +1,367 @@
+---
+import "../styles/global.css";
+
+const year = new Date().getFullYear();
+
+const services = [
+  {
+    title: "Strategic Relationship Facilitation",
+    body:
+      "We help principals, capital partners, operators, and strategic buyers engage through focused introductions tied to clear commercial objectives."
+  },
+  {
+    title: "Business Growth Advisory",
+    body:
+      "We advise leadership teams on expansion paths, partnership strategy, transaction positioning, and market-facing execution."
+  },
+  {
+    title: "Investment Capital Alignment",
+    body:
+      "We align qualified opportunities with appropriate capital sources and support early evaluation, diligence framing, and deal structure."
+  },
+  {
+    title: "Cross-Industry Market Entry",
+    body:
+      "We support companies entering new sectors or geographies with practical insight into counterparties, regulation, and local execution needs."
+  },
+  {
+    title: "Opportunity Scouting",
+    body:
+      "We identify strategic fits, qualified stakeholders, and actionable opportunities before internal teams commit significant time or resources."
+  }
+];
+
+const credentials = [
+  {
+    label: "Atlanta-based",
+    text: "Registered in Georgia with a relationship network extending across North America, Europe, Asia, and Latin America."
+  },
+  {
+    label: "Principal-led",
+    text: "Engagements are shaped around senior-level alignment, qualified counterparties, and direct execution priorities."
+  },
+  {
+    label: "Cross-sector",
+    text: "Experience spans energy, infrastructure, real estate, manufacturing, finance, and emerging technologies."
+  }
+];
+
+const markets = [
+  {
+    title: "Energy & Oil and Gas",
+    summary:
+      "Supporting strategic relationships across conventional energy, services, and adjacent infrastructure."
+  },
+  {
+    title: "AgTech",
+    summary:
+      "Connecting agricultural innovation with capital, operators, and market-entry opportunities."
+  },
+  {
+    title: "Environmental Solutions",
+    summary:
+      "Advising on practical solutions for remediation, sustainability, and environmental transformation."
+  },
+  {
+    title: "Carbon Markets",
+    summary:
+      "Helping clients evaluate carbon-related opportunities, partnerships, and commercial pathways."
+  },
+  {
+    title: "Biotechnology",
+    summary:
+      "Facilitating relationships for specialized technologies with commercial and environmental applications."
+  },
+  {
+    title: "Infrastructure & Urban Development",
+    summary:
+      "Aligning public, private, and capital partners around complex development initiatives."
+  },
+  {
+    title: "Hospitality Real Estate",
+    summary:
+      "Supporting hospitality and real estate opportunities through qualified relationships and strategic positioning."
+  }
+];
+
+const advisoryFocus = [
+  {
+    title: "Relationship Access",
+    body: "Senior-level introductions to qualified counterparties and decision-makers."
+  },
+  {
+    title: "Capital Alignment",
+    body: "Positioning opportunities for investors, operators, and strategic capital partners."
+  },
+  {
+    title: "Market Entry",
+    body: "Guidance for cross-sector growth, partnerships, and execution planning."
+  }
+];
+
+const countries = [
+  "Taiwan",
+  "Spain",
+  "Canada",
+  "France",
+  "Germany",
+  "Italy",
+  "Japan",
+  "United Kingdom",
+  "United States",
+  "China",
+  "Mexico",
+  "Brazil"
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlantus Partners | Strategic Advisors</title>
+    <meta
+      name="description"
+      content="Atlantus Partners is an Atlanta-based strategic consulting firm connecting capital, companies, and cross-industry opportunities."
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://www.atlantuspartners.com/" />
+    <meta property="og:title" content="Atlantus Partners | Strategic Advisors" />
+    <meta
+      property="og:description"
+      content="Strategic advisory for capital alignment, market entry, and relationship-driven growth."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.atlantuspartners.com/" />
+    <meta property="og:image" content="https://www.atlantuspartners.com/images/atltransblue.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="/images/atltranssilver.png" type="image/png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand-link" href="#home" aria-label="Atlantus Partners home">
+        <img src="/images/atltranssilver.png" alt="" width="44" height="44" />
+     
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="main-nav" id="primary-navigation" aria-label="Primary navigation">
+        <a href="#about">Who We Are</a>
+        <a href="#services">Services</a>
+        <a href="#markets">Markets</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home" aria-labelledby="hero-title">
+        <div class="hero-media" aria-hidden="true"></div>
+        <div class="hero-content">
+          <img
+            class="hero-logo"
+            id="hero-title"
+            src="/images/atltransblue-padded.png"
+            alt="Atlantus Partners"
+            width="1136"
+            height="1080"
+          />
+          <div class="hero-intro">
+            <p class="hero-kicker">Strategic advisors for relationship-driven growth.</p>
+            <p class="hero-copy">
+              Atlantus Partners helps leadership teams, investors, and operators
+              move from strategic interest to qualified relationships, capital alignment,
+              and executable opportunities.
+            </p>
+            <div class="hero-actions" aria-label="Primary actions">
+              <a class="button button-primary" href="#contact">Start a Conversation</a>
+              <a class="button button-secondary" href="#services">Explore Services</a>
+            </div>
+          </div>
+          <div class="hero-panel" aria-label="Global reach">
+            <p class="hero-reach-label">Global Reach</p>
+            <div class="flag-row" aria-label={countries.join(", ")}>
+              <span title="Taiwan">🇹🇼</span>
+              <span title="Spain">🇪🇸</span>
+              <span title="Canada">🇨🇦</span>
+              <span title="France">🇫🇷</span>
+              <span title="Germany">🇩🇪</span>
+              <span title="Italy">🇮🇹</span>
+              <span title="Japan">🇯🇵</span>
+              <span title="United Kingdom">🇬🇧</span>
+              <span title="United States">🇺🇸</span>
+              <span title="China">🇨🇳</span>
+              <span title="Mexico">🇲🇽</span>
+              <span title="Brazil">🇧🇷</span>
+            </div>
+          </div>
+        </div>
+        <aside class="hero-advisory" aria-labelledby="advisory-title">
+          <p class="eyebrow">Advisory Focus</p>
+          <h2 id="advisory-title">Capital, market access, and execution.</h2>
+          <div class="advisory-list">
+            {advisoryFocus.map((item) => (
+              <article class="advisory-item">
+                <h3>{item.title}</h3>
+                <p>{item.body}</p>
+              </article>
+            ))}
+          </div>
+        </aside>
+      </section>
+
+      <section class="section section-light" id="about" aria-labelledby="about-title">
+        <div class="section-grid section-grid-centered">
+          <div>
+            <p class="eyebrow">Who We Are</p>
+            <h2 id="about-title">Senior-level advisory for complex growth and market-entry decisions.</h2>
+          </div>
+          <div class="copy-stack">
+            <p>
+              Atlantus Partners is a strategic advisory firm that helps organizations access qualified counterparties, evaluate market opportunities, and advance initiatives through disciplined execution.
+            </p>
+            <p>
+              We operate across sectors where trust, timing, and access shape outcomes, including energy, infrastructure, finance, manufacturing, real estate, carbon markets, and emerging technologies.
+            </p>
+            <p>
+              Atlantus Partners works under defined advisory engagements with leadership teams, investors, and operators to develop qualified strategic relationships, align capital opportunities, and support executable initiatives through milestone-driven deliverables, defined timelines, and execution-focused advisory support.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section credibility-section" aria-labelledby="credibility-title">
+        <div class="section-heading">
+          <p class="eyebrow">Credibility</p>
+          <h2 id="credibility-title">Built for discretion, senior access, and practical execution.</h2>
+        </div>
+        <div class="credential-grid">
+          {credentials.map((credential) => (
+            <article class="credential-card">
+              <h3>{credential.label}</h3>
+              <p>{credential.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="section section-dark" id="services" aria-labelledby="services-title">
+        <div class="section-heading">
+          <p class="eyebrow">Our Services</p>
+          <h2 id="services-title">Focused advisory for growth, investment, and cross-market execution.</h2>
+        </div>
+        <div class="service-grid">
+          {services.map((service, index) => (
+            <article class="service-card">
+              <span>{String(index + 1).padStart(2, "0")}</span>
+              <h3>{service.title}</h3>
+              <p>{service.body}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section class="image-band" aria-label="Atlantus market presence">
+        <img src="/images/stock.jpg" alt="Financial market display" loading="lazy" />
+        <div>
+          <p class="eyebrow">Execution Support</p>
+          <h2>From first conversation to strategic alignment, we help opportunities advance with purpose.</h2>
+        </div>
+      </section>
+
+      <section class="section section-light" id="markets" aria-labelledby="markets-title">
+        <div class="section-grid">
+          <div>
+            <p class="eyebrow">Markets</p>
+            <h2 id="markets-title">Cross-sector experience for complex growth initiatives.</h2>
+          </div>
+          <div class="market-grid">
+            {markets.map((market) => (
+              <article class="market-card">
+                <h3>{market.title}</h3>
+                <p>{market.summary}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="contact-intro">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Bring us the opportunity, market, or relationship you are trying to unlock.</h2>
+          <p>
+            Share a brief note and Atlantus Partners will follow up directly.
+          </p>
+          <a href="mailto:info@atlantuspartners.com">info@atlantuspartners.com</a>
+        </div>
+
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/e43bce5edf5d10fd72d8be27c06df5b3"
+          method="POST"
+        >
+          <input type="hidden" name="form_name" value="Atlantus" />
+          <input type="hidden" name="_subject" value="New Atlantus Partners inquiry" />
+          <input type="hidden" name="_captcha" value="false" />
+          <label class="form-honeypot" aria-hidden="true">
+            Company Website
+            <input
+              type="text"
+              name="_honey"
+              tabindex="-1"
+              autocomplete="off"
+            />
+          </label>
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Email Address
+            <input type="email" name="_replyto" autocomplete="email" required />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button button-primary" type="submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+
+    <script>
+      const header = document.querySelector(".site-header");
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelectorAll(".main-nav a");
+
+      navToggle?.addEventListener("click", () => {
+        const isOpen = header?.classList.toggle("menu-open") ?? false;
+        navToggle.setAttribute("aria-expanded", String(isOpen));
+        navToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+      });
+
+      navLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          header?.classList.remove("menu-open");
+          navToggle?.setAttribute("aria-expanded", "false");
+          navToggle?.setAttribute("aria-label", "Open menu");
+        });
+      });
+    </script>
+
+    <footer class="site-footer">
+      <img src="/images/atltranssilver.png" alt="" width="36" height="36" />
+      <p>© {year} Atlantus Partners LLC. All rights reserved. Registered in Georgia, USA.</p>
+    </footer>
+  </body>
+</html>
