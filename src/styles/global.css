@@ -150,9 +150,9 @@ a {
   position: relative;
   min-height: 84vh;
   display: grid;
-  grid-template-columns: minmax(0, 720px) minmax(320px, 430px);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: center;
-  gap: clamp(40px, 7vw, 120px);
+  gap: clamp(36px, 5vw, 72px);
   padding: 124px clamp(20px, 5vw, 72px) 44px;
   color: var(--ink);
   overflow: hidden;
@@ -178,7 +178,7 @@ a {
 
 .hero-content {
   position: relative;
-  max-width: 860px;
+  width: 100%;
 }
 
 .hero-content::before {
@@ -231,7 +231,7 @@ h1 {
 }
 
 .hero-intro {
-  max-width: 760px;
+  width: 100%;
   padding: clamp(22px, 3vw, 32px);
   border: 1px solid rgba(33, 77, 92, 0.18);
   border-left: 4px solid rgba(33, 77, 92, 0.72);
@@ -343,6 +343,7 @@ h3 {
 }
 
 .hero-advisory {
+  width: 100%;
   padding: 34px;
   border: 1px solid rgba(157, 188, 199, 0.18);
   border-top: 4px solid rgba(157, 188, 199, 0.56);
