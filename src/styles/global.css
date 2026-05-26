@@ -574,6 +574,50 @@ h3 {
   font-size: 1.1rem;
 }
 
+.contact-lead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 10px;
+  margin: 26px 0 12px;
+}
+
+.contact-lead strong {
+  flex-basis: 100%;
+  color: var(--white);
+  font-family: Orbitron, ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem;
+}
+
+.contact-lead span {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.social-link {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(157, 188, 199, 0.46);
+  border-radius: 4px;
+  color: var(--gold);
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.social-link:hover,
+.social-link:focus-visible {
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.social-link svg {
+  width: 14px;
+  height: 14px;
+  fill: currentColor;
+}
+
 .contact-intro a {
   color: var(--gold);
   font-weight: 800;
